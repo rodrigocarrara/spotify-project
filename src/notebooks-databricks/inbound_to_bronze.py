@@ -58,7 +58,7 @@ unique_countries.show(n=100, truncate=False)
 
 # COMMAND ----------
 
-# Set the configuration to disable format check
+# Desabilitar o format check na configuração
 spark.conf.set("spark.databricks.delta.formatCheck.enabled", "false")
 
 # Renomear colunas para remover caracteres invalidos para delta table
