@@ -18,7 +18,7 @@ from pyspark.sql import functions as F
 
 # COMMAND ----------
 
-path='dbfs:/mnt/dados/inbound/spotify-charts-data.csv'
+path='dbfs:/mnt/dados/inbound/spotify-charts-data'
 # Ler CSV com encoding UTF-8
 bronze_df= spark.read \
     .option("header", "true") \
