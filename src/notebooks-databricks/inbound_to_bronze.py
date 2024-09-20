@@ -4,7 +4,8 @@
 
 # COMMAND ----------
 
-dbutils.fs.ls("/mnt/dados/inbound")
+
+dbutils.fs.ls('dbfs:/mnt/dados/inbound')
 
 # COMMAND ----------
 
@@ -17,7 +18,7 @@ from pyspark.sql import functions as F
 
 # COMMAND ----------
 
-path='dbfs:/mnt/dados/inbound/spotify_charts_data.csv'
+path='dbfs:/mnt/dados/inbound/spotify-charts-data.csv'
 # Ler CSV com encoding UTF-8
 bronze_df= spark.read \
     .option("header", "true") \
@@ -28,6 +29,7 @@ display(bronze_df)
 
 # COMMAND ----------
 
+#Verificar as colunas presentes na tabela
 bronze_df.printSchema()
 
 # COMMAND ----------
