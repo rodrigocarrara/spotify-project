@@ -3,11 +3,18 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "datalake-ingestion",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/spotifycharts/blobs/inbound",
-			"blobPathEndsWith": "spotify_charts_data.csv",
+			"blobPathEndsWith": "spotify-charts-data.csv",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/7cbe93da-e115-46d3-996c-d077a8995077/resourceGroups/etl_resource_group/providers/Microsoft.Storage/storageAccounts/dlspotify",
 			"events": [
