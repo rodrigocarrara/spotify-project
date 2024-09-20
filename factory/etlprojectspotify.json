@@ -1,0 +1,9 @@
+{
+	"name": "etlprojectspotify",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "23a4309a-e222-4e29-8c84-d3f92afcc620",
+		"tenantId": "eb663dfe-4e96-4298-bbed-f4a5720ae347"
+	}
+}
