@@ -124,6 +124,7 @@
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
 					"blobPathBeginsWith": "/spotifycharts/blobs/inbound/",
+					"blobPathEndsWith": "spotify-charts-data.csv",
 					"ignoreEmptyBlobs": true,
 					"scope": "[parameters('pipeline_trigger_properties_typeProperties_scope')]",
 					"events": [
